@@ -1,0 +1,31 @@
+zendesk:
+  subdomain: ${ZENDESK_SUBDOMAIN}
+  email: ${ZENDESK_EMAIL}
+  api_token: ${ZENDESK_API_TOKEN}
+  base_url: "https://{subdomain}.zendesk.com/api/v2/"
+  
+rate_limiting:
+  requests_per_minute: 700  # Zendesk allows 700 requests/minute
+  retry_attempts: 3
+  backoff_factor: 2
+
+output:
+  base_directory: "output"
+  date_format: "%Y-%m-%d %H:%M:%S"
+  
+categories:
+  tickets:
+    directory: "tickets"
+    subcategories: ["open", "solved", "closed", "pending"]
+  users:
+    directory: "users"
+    subcategories: ["agents", "end-users", "admins"]
+  organizations:
+    directory: "organizations"
+  knowledge_base:
+    directory: "knowledge-base"
+    subcategories: ["articles", "sections", "categories"]
+  macros:
+    directory: "macros"
+  groups:
+    directory: "groups" 
