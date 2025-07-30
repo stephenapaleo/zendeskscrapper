@@ -401,3 +401,4 @@ For issues, questions, or feature requests, please open an issue on the project 
 ---
 
 **Built with ❤️ using Python, Click, Rich, and the Zendesk REST API** 
+Cat fact: A house cat’s genome is 95.6 percent tiger, and they share many behaviors with their jungle ancestors, says Layla Morgan Wilde, a cat behavior expert and the founder of Cat Wisdom 101. These behaviors include scent marking by scratching, prey play, prey stalking, pouncing, chinning, and urine marking.
